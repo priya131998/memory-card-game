@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    /* display: flex; */
+    background-color:rgb(118, 115, 121);
+  }
+  
+  
+  .memory-cards {
+    width: 540px;
+    height: 540px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    margin: 0 auto;
+    padding-top: 25px;
+   
+  }
+  
+  .card {
+    width: 20%;
+    height: 30.333%;
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+     transform-style: preserve-3d; 
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    /* background-image: url("back.png"); */
+  }
+
+  .card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+  
+  .card .flip {
+    transform: rotateY(180deg);
+  }
+
+  .back-card {
+    width: 100%;
+    height: 100%;
+    /* padding: 20px; */
+    position: absolute;
+    border-radius: 5px;
+    /* transform: rotateY(180deg); */
+  }
+
+
+
+
+ .circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border-color: red;
+  border-style: solid;
+  display: inline-block;
+  position: absolute;
+   right: 0;
+   top: 300px;
+   left: 510px;
+   bottom: 0;
+ }
+
+ div#countdown {
+   position: absolute;
+   right: 0;
+   top: 60%;
+   left: 100%;
+   bottom: 0;
+   font-size:  100%;
+   
+ }
+
