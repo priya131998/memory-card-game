@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cardsFlippedId = []
             resultDisplay.textContent = cardsWon.length
     if  (cardsWon.length === deck.length/2) {
-        //stopTime();
+        
       resultDisplay.textContent = 'Congratulations! You found them all!'
     
     } else if(timeLeft === 0) {
