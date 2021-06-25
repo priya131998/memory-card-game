@@ -169,10 +169,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
       resultDisplay.textContent = 'Congratulations! You found them all!'
     
-    } else if(timeLeft === 0) {
+    } else if(timeLeft <= 0) {
         
         resultDisplay.textContent = 'You loose!'
     }
+    console.log(cardsWon.length)
+    console.log(timeLeft)
         }
 
         createBoard()
