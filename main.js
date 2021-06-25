@@ -119,8 +119,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (cardsFlipped.length === 2) {
       document.body.style.pointerEvents = "none";
       setTimeout(checkForMatch, 500);
-
-      console.log("clicked");
     }
   }
 
