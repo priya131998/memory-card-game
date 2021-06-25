@@ -124,8 +124,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //function for the timer
   let timeLeft = 30;
+  //to show the exact time
+  let intervalId;
   function countDown() {
-    setInterval(function () {
+    intervalId = setInterval(function () {
       if (timeLeft <= 0) {
         clearInterval((timeLeft = 0));
         document.body.style.pointerEvents = "none";
@@ -161,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //if condition to show the win and lose message
     if (cardsWon.length === deck.length / 2) {
       resultDisplay.textContent = "Congratulations! You found them all!";
-      clearInterval((timeLeft = 0));
+      clearInterval(intervalId);
     } else if (timeLeft <= 0) {
       resultDisplay.textContent = "You lose!";
     }
