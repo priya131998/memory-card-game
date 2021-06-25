@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 this.setAttribute('src', deck[cardId].frontimg)
                 if (cardsFlipped.length === 2) {
                 document.body.style.pointerEvents = "none";
-                setTimeout(checkForMatch, 1000)
+                setTimeout(checkForMatch, 500)
     
                 console.log("clicked")
                 }
