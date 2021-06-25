@@ -4,7 +4,7 @@
 
 1. Click on the start button to start the time and the game
 2. For every pair you find it adds it onto the score and keeps increasing as you new pairs
-2. Under 30 seconds you're suppose to find all matching pairs if you do find all of them you will get a winning message and the timer will change into 0 seconds, if you dont you will get a message saying you lost.
+2. Under 30 seconds you're suppose to find all matching pairs if you do find all of them you will get a winning message and the timer will stop at that particular seconds, if you dont win you will get a message saying you lose.
 4. To restart the game you need to refresh the page
 
 ## Background information about the game: 
