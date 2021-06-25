@@ -161,6 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //if condition to show the win and lose message
     if (cardsWon.length === deck.length / 2) {
       resultDisplay.textContent = "Congratulations! You found them all!";
+      clearInterval((timeLeft = 0));
     } else if (timeLeft <= 0) {
       resultDisplay.textContent = "You loose!";
     }
