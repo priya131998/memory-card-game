@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
       resultDisplay.textContent = "Congratulations! You found them all!";
       clearInterval((timeLeft = 0));
     } else if (timeLeft <= 0) {
-      resultDisplay.textContent = "You loose!";
+      resultDisplay.textContent = "You lose!";
     }
     console.log(cardsWon.length);
     console.log(timeLeft);
