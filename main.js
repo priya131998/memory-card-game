@@ -2,68 +2,68 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const deck = [ {
-        name: 'ace',
-        frontimg: 'ace.png'
+        name: 'pink',
+        frontimg: 'pacman11.png'
       },
       {
-        name: 'king',
-        frontimg: 'king.png'
+        name: 'yellow',
+        frontimg: 'pacman12.png'
       },
       {
-        name: 'queen',
-        frontimg: 'queen.png'
+        name: 'blue',
+        frontimg: 'pacman13.png'
       },
       {
-        name: 'jack',
-        frontimg: 'jack.png'
+        name: 'red',
+        frontimg: 'pacman14.png'
       },
       {
-        name: 'two',
-        frontimg: 'two.png'
+        name: 'teal',
+        frontimg: 'pacman15.png'
       },
       {
-        name: 'three',
-        frontimg: 'three.png'
+        name: 'lightblue',
+        frontimg: 'pacman16.png'
       },
       {
-        name: 'four',
-        frontimg: 'four.png'
+        name: 'darkpink',
+        frontimg: 'pacman17.png'
       },
       {
-        name: 'five',
-        frontimg: 'five.png'
+        name: 'evil',
+        frontimg: 'pacman18.png'
       },
       {
-        name: 'ace',
-        frontimg: 'ace.png'
+        name: 'pink',
+        frontimg: 'pacman11.png'
       },
       {
-        name: 'king',
-        frontimg: 'king.png'
+        name: 'yellow',
+        frontimg: 'pacman12.png'
       },
       {
-        name: 'queen',
-        frontimg: 'queen.png'
+        name: 'blue',
+        frontimg: 'pacman13.png'
       },
       {
-        name: 'jack',
-        frontimg: 'jack.png'
+        name: 'red',
+        frontimg: 'pacman14.png'
       },
       {
-        name: 'two',
-        frontimg: 'two.png'
+        name: 'teal',
+        frontimg: 'pacman15.png'
       },
       {
-        name: 'three',
-        frontimg: 'three.png'
+        name: 'lightblue',
+        frontimg: 'pacman16.png'
       },
       {
-        name: 'four',
-        frontimg: 'four.png'
+        name: 'darkpink',
+        frontimg: 'pacman17.png'
       },
       {
-        name: 'five',
-        frontimg: 'five.png'
+        name: 'evil',
+        frontimg: 'pacman18.png'
       }
     ]
 
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.body.style.pointerEvents = "none";
                     //timeLeftDisplay.innerHTML = "Time is up!"
                 }
-                timeLeftDisplay.innerHTML = timeLeft 
+                timeLeftDisplay.innerHTML = timeLeft +" " + "sec"
                 timeLeft -= 1
 
             }, 1000)
