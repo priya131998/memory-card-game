@@ -13,15 +13,15 @@ Memory card game is a simple game where the user has to find all the pairs while
 
 ## Screenshots of the game:
 
-![Before the game started](https://raw.githubusercontent.com/priya131998/memory-card-game/main/Screenshot2.png)
+![Before the game started](https://github.com/priya131998/memory-card-game/blob/main/Screenshots/Screenshot2.png)
 &nbsp;
 &nbsp;
 
-![After the game started](https://raw.githubusercontent.com/priya131998/memory-card-game/main/Screenshot1.png)
+![After the game started](https://github.com/priya131998/memory-card-game/blob/main/Screenshots/Screenshot3.png)
 &nbsp;
 &nbsp;
 
-![After the game started](https://raw.githubusercontent.com/priya131998/memory-card-game/main/Screenshot3.png)
+![After the game started](https://github.com/priya131998/memory-card-game/blob/main/Screenshots/Screenshot1.png)
 &nbsp;
 &nbsp;
 
