@@ -3,67 +3,67 @@ document.addEventListener("DOMContentLoaded", () => {
   const deck = [
     {
       name: "pink",
-      frontimg: "pacman11.png",
+      frontimg: "images/pacman11.png",
     },
     {
       name: "yellow",
-      frontimg: "pacman12.png",
+      frontimg: "images/pacman12.png",
     },
     {
       name: "blue",
-      frontimg: "pacman13.png",
+      frontimg: "images/pacman13.png",
     },
     {
       name: "red",
-      frontimg: "pacman14.png",
+      frontimg: "images/pacman14.png",
     },
     {
       name: "teal",
-      frontimg: "pacman15.png",
+      frontimg: "images/pacman15.png",
     },
     {
       name: "lightblue",
-      frontimg: "pacman16.png",
+      frontimg: "images/pacman16.png",
     },
     {
       name: "darkpink",
-      frontimg: "pacman17.png",
+      frontimg: "images/pacman17.png",
     },
     {
       name: "evil",
-      frontimg: "pacman18.png",
+      frontimg: "images/pacman18.png",
     },
     {
       name: "pink",
-      frontimg: "pacman11.png",
+      frontimg: "images/pacman11.png",
     },
     {
       name: "yellow",
-      frontimg: "pacman12.png",
+      frontimg: "images/pacman12.png",
     },
     {
       name: "blue",
-      frontimg: "pacman13.png",
+      frontimg: "images/pacman13.png",
     },
     {
       name: "red",
-      frontimg: "pacman14.png",
+      frontimg: "images/pacman14.png",
     },
     {
       name: "teal",
-      frontimg: "pacman15.png",
+      frontimg: "images/pacman15.png",
     },
     {
       name: "lightblue",
-      frontimg: "pacman16.png",
+      frontimg: "images/pacman16.png",
     },
     {
       name: "darkpink",
-      frontimg: "pacman17.png",
+      frontimg: "images/pacman17.png",
     },
     {
       name: "evil",
-      frontimg: "pacman18.png",
+      frontimg: "images/pacman18.png",
     },
   ];
 
@@ -75,13 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
   let cardsFlipped = [];
   let cardsFlippedId = [];
   let cardsWon = [];
+  
+    memoryCards.style.visibility = "hidden";
 
   //function to shuffle the cards
   function shuffle(array) {
     let currentIdx = array.length,
       temp,
       randomIdx;
-
+      
     for (currentIdx = array.length - 1; currentIdx > 0; currentIdx -= 1) {
       randomIdx = Math.floor(Math.random() * (currentIdx + 1));
       temp = array[currentIdx];
@@ -98,14 +100,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const newDiv = document.createElement("div");
       newDiv.classList.add("card");
       const backfrontCard = document.createElement("img");
-      backfrontCard.setAttribute("src", "back.png");
+      backfrontCard.setAttribute("src", "images/back.png");
       backfrontCard.setAttribute("data-id", i);
       backfrontCard.classList.add("back-card");
       backfrontCard.addEventListener("click", flipCard);
       newDiv.appendChild(backfrontCard);
       memoryCards.appendChild(newDiv);
+    
     }
   }
+
+
   //function for flipping the cards
   function flipCard() {
     //getting the data id of the card that is clicked
@@ -127,6 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //to show the exact time
   let intervalId;
   function countDown() {
+    memoryCards.style.visibility = "visible";
     intervalId = setInterval(function () {
       if (timeLeft <= 0) {
         clearInterval((timeLeft = 0));
@@ -152,19 +158,21 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.style.pointerEvents = "auto";
       cardsWon.push(cardsFlipped);
     } else {
-      cards[cardOne].setAttribute("src", "back.png");
-      cards[cardTwo].setAttribute("src", "back.png");
+      cards[cardOne].setAttribute("src", "images/back.png");
+      cards[cardTwo].setAttribute("src", "images/back.png");
       document.body.style.pointerEvents = "auto";
       console.log("unmatched");
     }
     cardsFlipped = [];
     cardsFlippedId = [];
     resultDisplay.textContent = cardsWon.length;
+
     //if condition to show the win and lose message
     if (cardsWon.length === deck.length / 2) {
       resultDisplay.textContent = "Congratulations! You found them all!";
       clearInterval(intervalId);
-    } else if (timeLeft <= 0) {
+    } 
+    if (timeLeft <= 0) {
       resultDisplay.textContent = "You lose!";
     }
     console.log(cardsWon.length);

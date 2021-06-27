@@ -11,7 +11,7 @@ html {
 body {
   height: 100vh;
 
-  background-image: url("Background.jpg");
+  background-image: url("images/Background.jpg");
 }
 
 h1 {
@@ -98,3 +98,5 @@ button:active {
   position: absolute;
   border-radius: 5px;
 }
+
+
