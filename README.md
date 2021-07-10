@@ -13,7 +13,7 @@ Memory card game is a simple game where the user has to find all the pairs while
 
 ## Screenshots of the game:
 
-![Before the game started](https://github.com/priya131998/memory-card-game/blob/main/Screenshots/Screenshot2.png)
+![Before the game started]()
 &nbsp;
 &nbsp;
 
